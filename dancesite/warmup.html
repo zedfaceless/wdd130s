@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danceprac Website</title>
-    <link rel="stylesheet" href="style/danceprac.css">
+    <link rel="stylesheet" href="style/warmup.css">
 </head>
+<script>
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+</script>
 <body>
     <header>
         <a id="logo_link" href="Index.html">
@@ -24,24 +46,41 @@
         </div>
         <section id="hero-msg">
             <h1 class="home-title">Warm Up!</h1>
-            <div class='button-box'>
-                <a class='Signup' href="sign-up.html" target="_blank">Sign Up</a>
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Warming Up</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Exercise</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">How To</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h3>Benefit of Warm up</h3>
+                <p>Warming up before dancing will help you loosen some muscles and to avoid internal injury that leads to a worst experience. We want you to have a best dancing experience whether you are here just for fitness or for intently learning how to dance. In some case, dancing without warming up will surprise your muscles and there's a chance that you will suffer pain in some part of your body. To avoid this kind of injury we suggest the following exercises to let you warm up then proceed to dance.</p>
+
             </div>
-            <p>Warming up before dancing will help you loosen some muscles and to avoid internal injury that leads to a worst experience. We want you to have a best dancing experience whether you are here just for fitness or for intently learning how to dance. In some case, dancing without warming up will surprise your muscles and there's a chance that you will suffer pain in some part of your body. To avoid this kind of injury we suggest the following exercises to let you warm up then proceed to dance.</p>
-            <p>Exercises:</p>
-            <p>• 20 times Jumping jack/ one kilometer jogging</p>
-            <p>• Head stretch in all four direction (up, down, left, right) & Muscle stretch from arms, legs, to your feet.</p>
-            <p>• 10 push up</p>
-            <p>• One whole body stretch</p>
-            <p>Jumping jack helps you wake up your whole body muscles this is helpful before you make stretching. Stand straight with your feet together and hands by your sides. Jump up, spread your feet and bring both hands together above your head. Jump again and return to the starting position, do this for 20 times. Jogging is a great exercise for cardio when doing jogging avoid running.</p>
-            <p>Do some basic stretch starting from your head push chin up, for 8 counts and do this to the rest of direction. Roll your shoulder to the front for 8 counts and reverse for 8 counts. Roll you hips to the right and reverse for 8 counts. Bend one knee and hug it into your body. Slowly kick that leg up toward the ceiling, straightening it and pulling it toward the torso until tension is felt behind the leg. Point and flex the foot 3 times and perform 3 ankle circles in each direction. Lower the leg and repeat with the opposite leg.</p>
-            <p>Once you have done this we are ready to go!</p>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Let's Exercise</h3>
+                <p>Exercises:</p>
+                <p>• 20 times Jumping jack/ one kilometer jogging</p>
+                <p>• Head stretch in all four direction (up, down, left, right) & Muscle stretch from arms, legs, to your feet. </p>
+                <p>• 10 push up</p>
+                <p>• One whole body stretch</p>
+
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>How to</h3>
+                <p>Jumping jack helps you wake up your whole body muscles this is helpful before you make stretching. Stand straight with your feet together and hands by your sides. Jump up, spread your feet and bring both hands together above your head. Jump again and return to the starting position, do this for 20 times. Jogging is a great exercise for cardio when doing jogging avoid running.</p>
+                <p>Do some basic stretch starting from your head push chin up, for 8 counts and do this to the rest of direction. Roll your shoulder to the front for 8 counts and reverse for 8 counts. Roll you hips to the right and reverse for 8 counts. Bend one knee and hug it into your body. Slowly kick that leg up toward the ceiling, straightening it and pulling it toward the torso until tension is felt behind the leg. Point and flex the foot 3 times and perform 3 ankle circles in each direction. Lower the leg and repeat with the opposite leg.</p>
+            
+            </div>
         </section>
     </div>
     <main>
         <div id="backround"></div>
         <img class="dancing" src="image/Page22nd.png" alt="Dancing girl">
     <section class="msg">
+        <p>Once you have done this we are ready to go!</p>
         <a class='join' href="sign-up.html" target="_blank">Sign Up</a>
     </section>
     </main>
