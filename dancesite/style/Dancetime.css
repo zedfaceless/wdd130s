@@ -35,9 +35,19 @@ nav {
 }
 
 .home-title {
-    font-size: 45px;
-    color: #d20781;
-    margin-top: 100px;
+    font-size: 25px;
+    color: #281d1e;
+    margin-top: 150px;
+}
+
+h3, h4, h5, h6 {
+    font-size: 25px;
+    border-style: outset;
+    background-color: #0b5aed;
+}
+
+h2 {
+    margin-top: 180px;
 }
 
 main section img {
@@ -77,43 +87,6 @@ nav a:hover {
     z-index: -1;
 }
 
-h2, h3, h4 {
-    font-size: 25px;
-}
-
-h2 {
-    margin-top: 50px;
-    text-decoration: underline;
-}
-
-#Warmu {
-    word-spacing: 5px;
-}
-
-h3 {
-    margin-top: 50px;
-    text-align: center;
-}
-
-#Letex {
-    white-space: nowrap;
-    width: 1000px;
-    border: 1px solid #000000;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-top: 50px;
-    text-align: left;
-}
-
-
-#Letex:hover {
-    overflow: visible;
-}
-
-h4 {
-    margin-top: 50px;
-}
-
 #hero-img {
     width: 50%;
     border: 10px solid rgb(236, 139, 79);
@@ -132,9 +105,16 @@ h4 {
     margin-top: 450px;
 }
 
-#London, #Paris, #Tokyo {
-    text-align: left;
+#dance1, #dance2, #dance3, #dance4 {
+    width: 1000px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(108, 74, 150, 0.5);
 }
+
 
 .msg {
     background-color: rgb(123, 156, 217);
@@ -144,7 +124,6 @@ h4 {
     grid-column: 6/10;
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
-    text-align: center;
     margin-top: 30px;
 }
 
@@ -162,7 +141,6 @@ h4 {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #82a02d;
     margin: 0 auto; 
-    margin-top: 30px;
 }
 
 .button-box {
@@ -177,11 +155,11 @@ h4 {
 }
 
 .button-box:hover {
-    background-color: rgba(11, 90, 237, 0.747);
+    background-color: #0b5aed;
 }
 
 .Sign-up, .join {
-    background-color: #a007bf;
+    background-color: #0785bf;
     color: black;
     text-decoration: none;
     font-size: 18px;
@@ -206,13 +184,6 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 footer a:hover {
     background-color: #8ECAE6;
@@ -225,13 +196,6 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
 }
 
 .dancing {
@@ -242,6 +206,7 @@ footer p {
     border: 10px solid rgb(236, 139, 79);
     transition: transform .5s;
     box-shadow: 5px 5px 10px lightblue;
+    margin-top: 30px;
 }
 .dancing:hover {
     opacity: .6;
