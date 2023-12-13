@@ -1,4 +1,6 @@
+/* File: CSS Homepage
 /* Author: Zed Fernandez */
+
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Carter+One&family=Roboto+Slab&display=swap');
 
 #content {
@@ -152,7 +154,7 @@ nav a:hover {
 }
 
 footer {
-    background-color: #1153d6;
+    background-color: #f22dee;
     color: white;
     padding: 25px 50px;
     margin-top: 45px;
